@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC7C8C47-59BB-46F9-A359-4295D0B9D8FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Empire_Monopoly</RootNamespace>
+    <AssemblyName>Empire Monopoly</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Board.cs" />
+    <Compile Include="Classes\Cards.cs" />
+    <Compile Include="Classes\Chance Cards\BusinessOfTheYearAward.cs" />
+    <Compile Include="Classes\Chance Cards\CasinoNight.cs" />
+    <Compile Include="Classes\Chance Cards\EmpireBDay.cs" />
+    <Compile Include="Classes\Chance Cards\GetOutOfJailFree.cs" />
+    <Compile Include="Classes\Chance Cards\GoToJail.cs" />
+    <Compile Include="Classes\Chance Cards\GoToJailForFraud.cs" />
+    <Compile Include="Classes\Chance Cards\InsiderTradingFine.cs" />
+    <Compile Include="Classes\Chance Cards\LaunchYourWebSite.cs" />
+    <Compile Include="Classes\Chance Cards\ProfitSoar.cs" />
+    <Compile Include="Classes\Chance Cards\SolarPowerBouns.cs" />
+    <Compile Include="Classes\Chance Cards\SpeedAhead.cs" />
+    <Compile Include="Classes\Chance Cards\SuccessfulAdvertisingCampaign.cs" />
+    <Compile Include="Classes\Chance Cards\WaterBonus.cs" />
+    <Compile Include="Classes\Dice.cs" />
+    <Compile Include="Classes\Empire Cards\BargainBusiness.cs" />
+    <Compile Include="Classes\Empire Cards\BillBoardTax.cs" />
+    <Compile Include="Classes\Empire Cards\DealBuster.cs" />
+    <Compile Include="Classes\Empire Cards\GetOutOfJailForFree.cs" />
+    <Compile Include="Classes\Empire Cards\HostileTakeover.cs" />
+    <Compile Include="Classes\Empire Cards\JustSayNo.cs" />
+    <Compile Include="Classes\Empire Cards\MoveToAnySpaceOnTheBoard.cs" />
+    <Compile Include="Classes\Empire Cards\PrivateJetTrip.cs" />
+    <Compile Include="Classes\Empire Cards\ReverseRent.cs" />
+    <Compile Include="Classes\Empire Cards\StockMarketCrash.cs" />
+    <Compile Include="Classes\Empire Cards\SwapTheTop.cs" />
+    <Compile Include="Classes\Empire Cards\TallestTowerBonus.cs" />
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="Classes\Spaces\Beats.cs" />
+    <Compile Include="Classes\Spaces\Carnival.cs" />
+    <Compile Include="Classes\Spaces\ChanceBottom.cs" />
+    <Compile Include="Classes\Spaces\ChanceLeft.cs" />
+    <Compile Include="Classes\Spaces\ChanceRight.cs" />
+    <Compile Include="Classes\Spaces\ChanceTop.cs" />
+    <Compile Include="Classes\Spaces\Chevrolet.cs" />
+    <Compile Include="Classes\Spaces\CocaCola.cs" />
+    <Compile Include="Classes\Spaces\Ducati.cs" />
+    <Compile Include="Classes\Spaces\EA.cs" />
+    <Compile Include="Classes\Spaces\Ebay.cs" />
+    <Compile Include="Classes\Spaces\ElectricCompany.cs" />
+    <Compile Include="Classes\Spaces\EmpireBottom.cs" />
+    <Compile Include="Classes\Spaces\EmpireTop.cs" />
+    <Compile Include="Classes\Spaces\Fender.cs" />
+    <Compile Include="Classes\Spaces\FreeParking.cs" />
+    <Compile Include="Classes\Spaces\Go.cs" />
+    <Compile Include="Classes\Spaces\GoToJail.cs" />
+    <Compile Include="Classes\Spaces\Hasbro.cs" />
+    <Compile Include="Classes\Spaces\Intel.cs" />
+    <Compile Include="Classes\Spaces\JetBlue.cs" />
+    <Compile Include="Classes\Spaces\JustVisiting.cs" />
+    <Compile Include="Classes\Spaces\Mcdonalds.cs" />
+    <Compile Include="Classes\Spaces\Nerf.cs" />
+    <Compile Include="Classes\Spaces\Nestle.cs" />
+    <Compile Include="Classes\Spaces\Paramount.cs" />
+    <Compile Include="Classes\Spaces\RivalTowerTax.cs" />
+    <Compile Include="Classes\Spaces\Samsung.cs" />
+    <Compile Include="Classes\Spaces\Spotify.cs" />
+    <Compile Include="Classes\Spaces\TowerTax.cs" />
+    <Compile Include="Classes\Spaces\Transformers.cs" />
+    <Compile Include="Classes\Spaces\UnderArmour.cs" />
+    <Compile Include="Classes\Spaces\WaterWorks.cs" />
+    <Compile Include="Classes\Spaces\XBox.cs" />
+    <Compile Include="Classes\Spaces\XGames.cs" />
+    <Compile Include="Classes\Spaces\Yahoo.cs" />
+    <Compile Include="Classes\Tower.cs" />
+    <Compile Include="Monopoly Empire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monopoly Empire.Designer.cs">
+      <DependentUpon>Monopoly Empire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Monopoly Empire.resx">
+      <DependentUpon>Monopoly Empire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ClassDiagram5.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paramount.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chevrolet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ebay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xgames.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ducati.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mekdonalds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yahoo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carnival.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\under armour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hasbro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Electricity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EA-Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jetBlue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fender.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spotify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transformers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nerf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coca-Cola.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nestle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water works.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xbox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chance1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chance2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chance3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tower Tax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rival Tower Tax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freeparking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToJail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jailspace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\PlayerImage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hourse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smiley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Beats.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Building.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Carnival.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Chevrolet.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_CocaCola.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Ducati.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Ea.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_EBay.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_ElectricCompany.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Fender.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Hasbro.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Intel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_JetBlue.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Mcdonalds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Nestle.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Paramount.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Samsung.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Spotify.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Transformers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_UnderArmour.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_WaterWorks.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_XBox.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_XGames.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Yahoo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB_Nerf.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
