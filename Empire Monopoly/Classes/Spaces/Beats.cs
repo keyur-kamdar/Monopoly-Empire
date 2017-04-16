@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Drawing;
+
+namespace Empire_Monopoly.Spaces
+{
+    class Beats : Board.Board
+    {
+        
+
+        public static Image img = Empire_Monopoly.Properties.Resources.BB_Beats;
+
+        
+        public static int size = 1;
+        public static int price = 100;
+
+        
+
+
+
+    }
+}

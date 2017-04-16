@@ -1,0 +1,9 @@
+D:\Keyur\CSULB\Sem -1\Advenced Software Engineering\Project\Final Project\Empire Monopoly\Empire Monopoly\Empire Monopoly\bin\Debug\Empire Monopoly.exe
+D:\Keyur\CSULB\Sem -1\Advenced Software Engineering\Project\Final Project\Empire Monopoly\Empire Monopoly\Empire Monopoly\bin\Debug\Empire Monopoly.pdb
+D:\Keyur\CSULB\Sem -1\Advenced Software Engineering\Project\Final Project\Empire Monopoly\Empire Monopoly\Empire Monopoly\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Keyur\CSULB\Sem -1\Advenced Software Engineering\Project\Final Project\Empire Monopoly\Empire Monopoly\Empire Monopoly\obj\x86\Debug\Empire_Monopoly.MonopolyEmpires.resources
+D:\Keyur\CSULB\Sem -1\Advenced Software Engineering\Project\Final Project\Empire Monopoly\Empire Monopoly\Empire Monopoly\obj\x86\Debug\Empire_Monopoly.Properties.Resources.resources
+D:\Keyur\CSULB\Sem -1\Advenced Software Engineering\Project\Final Project\Empire Monopoly\Empire Monopoly\Empire Monopoly\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Keyur\CSULB\Sem -1\Advenced Software Engineering\Project\Final Project\Empire Monopoly\Empire Monopoly\Empire Monopoly\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Keyur\CSULB\Sem -1\Advenced Software Engineering\Project\Final Project\Empire Monopoly\Empire Monopoly\Empire Monopoly\obj\x86\Debug\Empire Monopoly.exe
+D:\Keyur\CSULB\Sem -1\Advenced Software Engineering\Project\Final Project\Empire Monopoly\Empire Monopoly\Empire Monopoly\obj\x86\Debug\Empire Monopoly.pdb
